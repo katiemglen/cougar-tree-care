@@ -446,10 +446,14 @@ section{padding:100px 0;position:relative}
 .svc-card p{font-size:0.82rem;color:var(--text-mid);line-height:1.5;margin-bottom:14px}
 .svc-card .svc-more{
   font-size:0.75rem;color:var(--accent);font-weight:600;text-transform:uppercase;
-  letter-spacing:1px;opacity:0;transform:translateY(8px);
+  letter-spacing:1px;opacity:0.7;transform:translateY(0);
   transition:opacity 0.3s,transform 0.3s;
 }
 .svc-card:hover .svc-more,.svc-card:focus-within .svc-more{opacity:1;transform:translateY(0)}
+/* Mobile: always show "Learn More" text */
+@media(max-width:768px){
+  .svc-card .svc-more{opacity:1}
+}
 
 /* ============================================================
    ABOUT US
@@ -783,11 +787,22 @@ section{padding:100px 0;position:relative}
 @media(max-width:768px){
   section{padding:72px 0}
   .nav-burger{display:flex}
-  .nav{position:fixed;top:68px;left:0;right:0;background:rgba(var(--bg-rgb),0.97);
+  /* Mobile header layout improvements */
+  .header-inner{flex-wrap:wrap;justify-content:center;position:relative}
+  .logo{order:1;flex:1 0 100%;justify-content:center;margin-bottom:8px}
+  .isa-badge{display:none}
+  .header-phone{order:2;position:absolute;left:24px;top:50%;transform:translateY(-50%)}
+  .nav-burger{order:3;position:absolute;right:24px;top:50%;transform:translateY(-50%)}
+  .nav{position:fixed;top:0;left:0;right:0;bottom:0;
+    background:rgba(var(--bg-rgb),0.97);
     backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-    flex-direction:column;padding:24px;gap:4px;border-bottom:1px solid var(--glass-border);
-    transform:translateY(-120%);opacity:0;transition:transform 0.4s,opacity 0.3s;z-index:99}
+    flex-direction:column;padding:24px;gap:4px;
+    transform:translateY(-100%);opacity:0;transition:transform 0.4s,opacity 0.3s;z-index:500;
+    justify-content:center}
   .nav-check:checked~.nav{transform:translateY(0);opacity:1}
+  /* Dark overlay behind menu */
+  .nav::before{content:'';position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:-1;opacity:0;transition:opacity 0.3s}
+  .nav-check:checked~.nav::before{opacity:1}
   .nav-check:checked~.nav-burger span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
   .nav-check:checked~.nav-burger span:nth-child(2){opacity:0}
   .nav-check:checked~.nav-burger span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
@@ -796,11 +811,27 @@ section{padding:100px 0;position:relative}
   .services-grid{grid-template-columns:1fr 1fr}
   .contact-layout{grid-template-columns:1fr}
   .careers-columns{grid-template-columns:1fr}
-  .crew-grid{grid-template-columns:1fr 1fr}
+  .crew-grid{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    gap:16px;
+    padding-bottom:12px;
+  }
+  .crew-grid > *{
+    flex:0 0 70%;
+    scroll-snap-align:start;
+  }
   .hero{min-height:80vh}
   .footer-grid{grid-template-columns:1fr}
   .footer-grid{text-align:center}
   .form-checkboxes{grid-template-columns:1fr}
+  /* Mobile: center service card icons */
+  .svc-card .svc-icon{text-align:center}
+  /* Mobile: fix section paragraph padding cutoff */
+  .container{padding:0 20px}
+  .section-head p{padding:0 20px}
 }
 @media(max-width:480px){
   .container{padding:0 16px}
@@ -1413,6 +1444,10 @@ section{padding:100px 0;position:relative}
 .storm-alert.visible~.header{top:38px}
 .storm-alert.visible~.badge-strip{margin-top:38px}
 html:has(.storm-alert.visible){scroll-padding-top:118px}
+/* Mobile: center storm alert text */
+@media(max-width:768px){
+  .storm-alert{text-align:center}
+}
 
 /* ============================================================
    FEATURE 10: SCROLL-TOP PROGRESS RING
