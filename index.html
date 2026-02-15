@@ -160,8 +160,9 @@
    ============================================================ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{font-family:'Poppins',sans-serif;line-height:1.7;overflow-x:hidden;width:100%;max-width:100vw}
-html{overflow-x:hidden;width:100%;max-width:100vw}
+body{font-family:'Poppins',sans-serif;line-height:1.7;overflow-x:clip;width:100%;max-width:100vw;position:relative}
+html{overflow-x:clip;width:100%;max-width:100vw}
+section,header,footer,.badge-strip,.hero,.storm-alert{max-width:100vw;overflow-x:clip}
 a{text-decoration:none;transition:color 0.3s}
 img{max-width:100%;height:auto;display:block}
 h1,h2,h3,h4{font-family:'Montserrat',sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;line-height:1.15}
@@ -888,14 +889,14 @@ section{padding:100px 0;position:relative}
   backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
   border-bottom:2px solid transparent;
   border-image:linear-gradient(90deg,transparent,var(--green),transparent) 1;
-  overflow-x:auto;-webkit-overflow-scrolling:touch;
+  overflow-x:hidden;
   scrollbar-width:none;
 }
 .badge-strip::-webkit-scrollbar{display:none}
 .badge-strip-inner{
   display:flex;align-items:center;justify-content:center;gap:24px;
-  max-width:1140px;margin:0 auto;padding:10px 24px;
-  white-space:nowrap;
+  max-width:100%;margin:0 auto;padding:10px 24px;
+  white-space:normal;flex-wrap:wrap;
 }
 .badge-item{
   display:flex;align-items:center;gap:6px;
