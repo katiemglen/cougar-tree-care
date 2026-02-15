@@ -345,6 +345,7 @@ section{padding:100px 0;position:relative}
 .isa-badge img{width:100%;height:100%;object-fit:contain;border-radius:0;filter:invert(1);opacity:0.9}
 .nav{display:flex;align-items:center;gap:4px}
 .nav a{font-size:0.82rem;color:var(--text-mid);padding:8px 12px;border-radius:50px;transition:all 0.3s;font-weight:500;min-height:44px;display:flex;align-items:center}
+.nav-close{display:none}
 .nav a:hover,.nav a:focus{color:var(--text);background:rgba(255,255,255,0.07)}
 .nav-check{position:absolute;opacity:0;pointer-events:none}
 .nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
@@ -797,20 +798,31 @@ section{padding:100px 0;position:relative}
   .header-phone{grid-column:1 / -1;grid-row:2;justify-self:center;padding:4px 0}
   .header-phone-text{display:inline!important;font-size:1.05rem}
   .header-phone-icon{display:none!important}
-  .nav{position:fixed;top:0;left:0;right:0;bottom:0;
-    background:rgba(var(--bg-rgb),0.97);
-    backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-    flex-direction:column;padding:24px;gap:4px;
-    transform:translateY(-100%);opacity:0;transition:transform 0.4s,opacity 0.3s;z-index:500;
-    justify-content:center}
-  .nav-check:checked~.nav{transform:translateY(0);opacity:1}
-  /* Dark overlay behind menu */
-  .nav::before{content:'';position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:-1;opacity:0;transition:opacity 0.3s}
-  .nav-check:checked~.nav::before{opacity:1}
+  /* Full-screen opaque mobile nav — 2025 trend */
+  .nav{position:fixed;inset:0;z-index:500;
+    background:var(--bg);
+    flex-direction:column;padding:80px 40px 40px;gap:8px;
+    transform:translateX(100%);opacity:0;
+    transition:transform 0.35s cubic-bezier(0.22,1,0.36,1),opacity 0.25s ease;
+    justify-content:flex-start;align-items:stretch;
+    overflow-y:auto}
+  .nav-check:checked~.nav{transform:translateX(0);opacity:1}
   .nav-check:checked~.nav-burger span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
   .nav-check:checked~.nav-burger span:nth-child(2){opacity:0}
   .nav-check:checked~.nav-burger span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
-  .nav a{width:100%;justify-content:center;padding:14px;font-size:1rem}
+  /* Close button */
+  .nav-close{display:flex;align-items:center;justify-content:center;
+    position:absolute;top:20px;right:20px;
+    width:48px;height:48px;border-radius:50%;
+    background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);
+    color:var(--text);font-size:1.4rem;cursor:pointer;
+    transition:background 0.3s,transform 0.3s}
+  .nav-close:hover,.nav-close:active{background:var(--accent);transform:scale(1.1)}
+  /* Menu items */
+  .nav a{width:100%;text-align:left;padding:18px 16px;font-size:1.15rem;font-weight:600;
+    border-bottom:1px solid rgba(255,255,255,0.08);letter-spacing:1px;
+    color:var(--text-mid);transition:color 0.3s,padding-left 0.3s}
+  .nav a:hover,.nav a:active{color:var(--accent);padding-left:24px;background:transparent}
   .clients-grid{grid-template-columns:repeat(2,1fr)}
   .services-grid{grid-template-columns:1fr 1fr}
   .contact-layout{grid-template-columns:1fr}
@@ -1676,14 +1688,15 @@ html:has(.storm-alert.visible){scroll-padding-top:118px}
     <input type="checkbox" id="nav-toggle" class="nav-check" aria-label="Toggle navigation menu">
     <label for="nav-toggle" class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></label>
     <nav class="nav" aria-label="Main navigation">
-      <a href="#hero">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contracts">Contracts</a>
-      <a href="#hub">Health Hub</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
-      <a href="#careers">Careers</a>
+      <label for="nav-toggle" class="nav-close" aria-label="Close menu">✕</label>
+      <a href="#hero" onclick="document.getElementById('nav-toggle').checked=false">Home</a>
+      <a href="#services" onclick="document.getElementById('nav-toggle').checked=false">Services</a>
+      <a href="#about" onclick="document.getElementById('nav-toggle').checked=false">About</a>
+      <a href="#contracts" onclick="document.getElementById('nav-toggle').checked=false">Contracts</a>
+      <a href="#hub" onclick="document.getElementById('nav-toggle').checked=false">Health Hub</a>
+      <a href="#faq" onclick="document.getElementById('nav-toggle').checked=false">FAQ</a>
+      <a href="#contact" onclick="document.getElementById('nav-toggle').checked=false">Contact</a>
+      <a href="#careers" onclick="document.getElementById('nav-toggle').checked=false">Careers</a>
     </nav>
   </div>
 </header>
