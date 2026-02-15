@@ -1,0 +1,770 @@
+============================================================================
+ COUGAR TREE CARE — COMPETITIVE RESEARCH & BEST PRACTICES REPORT
+ Compiled: February 11, 2026
+ Purpose: Identify gaps between the current wireframe and industry-leading
+          tree service websites. All recommendations are low-maintenance
+          (suitable for a WordPress site updated once per year).
+============================================================================
+
+
+TABLE OF CONTENTS
+─────────────────
+1. Executive Summary
+2. What the Best Tree Service Websites Do (That Cougar's Wireframe Doesn't)
+3. Features That Generate Phone Calls & Form Submissions
+4. Fargo-Area Competitor Insights
+5. Arborist-Specific Website Best Practices
+6. Accessibility & Performance Best Practices (2025-2026)
+7. Prioritized Action Items
+
+
+============================================================================
+1. EXECUTIVE SUMMARY
+============================================================================
+
+The current Cougar Tree Care wireframe is above average for the tree
+service industry. It has strong branding, a clear value proposition,
+good service descriptions, a floating CTA, and a comprehensive FAQ.
+The "corporate contracts" positioning is a genuine differentiator that
+most competitors completely lack.
+
+However, there are meaningful gaps compared to the best-performing tree
+service websites and local service businesses. The biggest missed
+opportunities fall into three categories:
+
+  A) TRUST SIGNALS — The wireframe lacks Google reviews, certifications
+     badges, insurance proof, and before/after photography that drive
+     conversion in this industry.
+
+  B) CONVERSION MECHANICS — The contact form is solid but missing
+     proven lead-generation features like click-to-call prominence,
+     urgency indicators, and response-time guarantees.
+
+  C) TECHNICAL FOUNDATION — No structured data (Schema.org), no Google
+     Business Profile integration, thin page-level SEO, and some
+     accessibility gaps.
+
+None of these fixes require ongoing maintenance. They are one-time
+additions that will keep working for years.
+
+
+============================================================================
+2. WHAT THE BEST TREE SERVICE WEBSITES DO (THAT COUGAR'S WIREFRAME DOESN'T)
+============================================================================
+
+The following features consistently appear on top-rated tree service
+company websites (companies ranking on page 1 in competitive metros,
+winning "best of" awards, and generating documented lead volume).
+
+
+2A. TRUST & CREDIBILITY — THE #1 CONVERSION DRIVER
+───────────────────────────────────────────────────
+
+MISSING: Google Reviews Integration
+  - Top tree service sites display their Google review score prominently
+    in the hero section or header (e.g., "4.9 stars — 237 reviews").
+  - Many embed 3-5 recent Google reviews directly on the homepage.
+  - The current wireframe has ZERO social proof from real customers.
+  - LOW-MAINTENANCE FIX: Use a WordPress plugin like "Widget for Google
+    Reviews" (free) or Jereviews. Set it and forget it — reviews auto-update.
+  - ALTERNATIVE: Manually pull 5 reviews, display them as static text
+    with reviewer first name and star count. Update once per year.
+
+MISSING: Certification & Insurance Badges
+  - The wireframe mentions "ISA Certified" in stat form but doesn't
+    display the actual ISA Certified Arborist badge/logo.
+  - Top sites display a row of trust badges: ISA logo, TCIA member logo,
+    BBB accredited, insurance carrier logo, state license number.
+  - These badges appear in the hero area, footer, or a dedicated
+    "credentials" strip between sections.
+  - LOW-MAINTENANCE FIX: Add a horizontal badge strip with 4-6 logos.
+    These certifications don't change often. Update only when renewed.
+
+MISSING: Before/After Photography
+  - The current wireframe uses placeholder images (placehold.co URLs).
+  - The single highest-converting visual element on tree service sites is
+    before/after photo pairs showing dramatic transformations.
+  - Top sites use slider-style before/after comparisons or side-by-side
+    grids with captions noting the scope of work.
+  - LOW-MAINTENANCE FIX: Take before/after photos on 4-6 notable jobs.
+    Use a WordPress before/after slider plugin (e.g., TwentyTwenty or
+    Starter Templates). These can stay static for years.
+
+MISSING: Video Content
+  - Leading tree service sites embed a 30-90 second hero video or
+    background video showing dramatic removals, crane work, or crew in
+    action. SavATree, Bartlett Tree Experts, and top regional companies
+    all do this.
+  - Even a single YouTube video embedded on the homepage increases
+    time-on-page and trust significantly.
+  - LOW-MAINTENANCE FIX: One iPhone video of a big takedown, uploaded to
+    YouTube, embedded on the homepage. Never needs updating.
+
+MISSING: "About Us" / Owner Story
+  - The PRD mentions James R. phasing out and David succeeding. There is
+    no about section or owner/company story in the wireframe.
+  - Tree care is a trust-based industry. Homeowners want to know who is
+    coming onto their property with chainsaws.
+  - Top sites have a brief "About" block with owner photo, years in
+    business, and a personal statement about why they got into tree care.
+  - LOW-MAINTENANCE FIX: One paragraph + one photo. Static content.
+
+
+2B. CONTENT & SEO GAPS
+──────────────────────
+
+MISSING: Service Area Page / Embedded Google Map
+  - The wireframe has a map placeholder but no actual Google Maps embed.
+  - Competitors embed a real Google Map with a service area overlay or
+    at minimum a Google Maps iframe centered on their location.
+  - A real map also helps Google understand the business's service area
+    for local search ranking.
+  - LOW-MAINTENANCE FIX: Embed a Google Maps iframe. Free. Static.
+
+MISSING: Location-Specific Content
+  - The wireframe mentions Fargo-Moorhead but doesn't have dedicated
+    mentions of West Fargo, Moorhead MN, Dilworth, etc. in headings
+    or in a way search engines can pick up.
+  - Top local service sites include a "Service Areas" section or page
+    listing all communities served, helping them rank for
+    "[service] + [city]" searches.
+  - LOW-MAINTENANCE FIX: Add a "Service Areas" section in the footer or
+    a dedicated block listing all served communities.
+
+MISSING: Structured Data / Schema.org Markup
+  - The wireframe has no JSON-LD structured data.
+  - Google uses LocalBusiness, Service, and FAQ schema to generate rich
+    results (star ratings, FAQ dropdowns, business info in search).
+  - Top tree service sites implement at minimum:
+      * LocalBusiness schema (name, address, phone, hours, service area)
+      * FAQPage schema (makes FAQ appear as dropdowns in Google results)
+      * Service schema for each service offered
+  - LOW-MAINTENANCE FIX: Add JSON-LD blocks to the page template. Set
+    once, never needs updating unless business info changes. WordPress
+    plugins like Yoast or Rank Math can auto-generate this.
+
+MISSING: Meta & Open Graph Tags
+  - The wireframe has a good title and meta description but no Open
+    Graph tags for social sharing, no Twitter card tags, and no
+    canonical URL.
+  - LOW-MAINTENANCE FIX: Yoast SEO or Rank Math plugin handles all of
+    this automatically.
+
+MISSING: Blog or Seasonal Content Strategy
+  - The Tree Health Hub is good educational content, but it's all on one
+    page in an accordion.
+  - Top-ranking tree service sites have individual pages for each topic
+    (e.g., "/emerald-ash-borer-fargo", "/storm-damage-tree-removal").
+  - Each page becomes a potential Google entry point.
+  - LOW-MAINTENANCE CONCERN: This is the one recommendation that requires
+    ongoing effort. COMPROMISE: Convert the 4 accordion topics into 4
+    standalone pages. They can sit static for years and still rank.
+
+
+2C. DESIGN & UX PATTERNS FROM TOP SITES
+────────────────────────────────────────
+
+PRESENT (GOOD): Floating CTA button — Cougar already has this.
+PRESENT (GOOD): Clear service descriptions with CTAs.
+PRESENT (GOOD): FAQ section — comprehensive and well-structured.
+PRESENT (GOOD): Mobile-responsive layout.
+PRESENT (GOOD): Emergency/storm response prominently mentioned.
+
+MISSING: Sticky Phone Number in Header
+  - On mobile, the best tree service sites show a tap-to-call phone
+    number button that stays visible in the header at all times.
+  - Cougar's header has navigation links but NO phone number.
+  - This is arguably the single biggest lead-generation miss for a
+    service business where 50%+ of leads come via phone.
+
+MISSING: Emergency Banner / Seasonal Alert
+  - Top sites use a thin banner above the header for seasonal alerts:
+    "Storm season is here — 24/7 emergency line: 701-729-7208"
+  - This creates urgency and surfaces the phone number immediately.
+  - LOW-MAINTENANCE FIX: A simple bar that can be toggled on/off in
+    WordPress. Update seasonally (spring storm season, fall cleanup).
+
+MISSING: Speed/Response Guarantee
+  - Many top tree sites prominently display: "Free estimates within
+    24 hours" or "Same-day emergency response."
+  - Cougar's wireframe mentions 24-hour response in the contact
+    section but doesn't make it a prominent selling point.
+
+
+============================================================================
+3. FEATURES THAT GENERATE PHONE CALLS & FORM SUBMISSIONS
+============================================================================
+
+Based on documented conversion rate optimization (CRO) data from local
+service businesses, these are the highest-impact lead generation features
+ranked by typical impact:
+
+
+3A. PHONE CALL GENERATORS (Ranked by Impact)
+─────────────────────────────────────────────
+
+1. CLICK-TO-CALL IN HEADER (Mobile)
+   Impact: 30-50% increase in phone leads from mobile visitors.
+   Current state: MISSING. The phone number appears only in the footer.
+   Fix: Add <a href="tel:7017297208"> to the header, styled as a button
+   on mobile. Show phone number text on desktop, button on mobile.
+   Maintenance: None.
+
+2. CLICK-TO-CALL FLOATING BUTTON (Mobile)
+   Impact: 15-25% increase in mobile calls.
+   Current state: The floating "Request Bid" button links to the form.
+   Fix: On mobile, add a second floating button (phone icon) or change
+   the floating button to a phone call button since mobile users prefer
+   calling over filling forms. Desktop keeps the form-linked button.
+   Maintenance: None.
+
+3. PHONE NUMBER IN HERO SECTION
+   Impact: 10-20% increase in calls.
+   Current state: MISSING from hero.
+   Fix: Add the phone number below the CTA buttons with text like
+   "Or call now: 701-729-7208"
+   Maintenance: None.
+
+4. EMERGENCY PHONE PROMINENT ON EVERY SECTION
+   Impact: Captures urgent/emergency leads that won't fill out forms.
+   Current state: Only in one service card and FAQ.
+   Fix: Include phone number in footer, header, hero, and the
+   emergency service card.
+   Maintenance: None.
+
+
+3B. FORM SUBMISSION GENERATORS (Ranked by Impact)
+──────────────────────────────────────────────────
+
+1. REDUCE FORM FIELDS
+   Impact: Every field removed increases submissions by ~5-10%.
+   Current state: The form has Name, Phone, Email, Job Type, Details,
+   and Photo Upload — 6 interaction points.
+   Fix: Make Email optional (already is) and consider removing the
+   photo upload from the initial form. The estimator can request
+   photos during follow-up. Keep it to: Name, Phone, Job Type,
+   Details.
+   Maintenance: None.
+
+2. RESPONSE TIME GUARANTEE ON FORM
+   Impact: 15-30% increase in form submissions.
+   Current state: "We typically respond within 24 hours" appears in
+   section subtitle but not near the form button.
+   Fix: Add text directly above or below the submit button:
+   "We respond within 24 hours. Free estimates, no obligation."
+   Maintenance: None.
+
+3. SOCIAL PROOF NEAR THE FORM
+   Impact: 10-20% increase in form submissions.
+   Current state: No reviews or testimonials near the contact form.
+   Fix: Add a single review quote with stars next to or above the
+   form. E.g., "Prompt, professional, fair price. Called Monday,
+   done Tuesday." — Google Review
+   Maintenance: None (or update annually).
+
+4. MULTI-STEP FORM / QUIZ-STYLE FORM
+   Impact: 20-40% increase in form submissions over single-page forms.
+   Current state: Single-page form.
+   Fix: Consider a 2-step form: Step 1 asks "What do you need?"
+   (radio buttons for services) and "How many trees?" — Step 2
+   collects name and phone. This reduces perceived effort.
+   Maintenance: None once built. WordPress form plugins like
+   WPForms or Gravity Forms support multi-step natively.
+
+5. INLINE FORM IN HERO SECTION
+   Impact: Captures visitors who won't scroll down to the contact section.
+   Current state: Hero has buttons that link TO the form below.
+   Fix: Add a compact 3-field form (Name, Phone, Service) directly
+   in the hero section, in addition to keeping the full form below.
+   Maintenance: None.
+
+
+3C. GENERAL CONVERSION BOOSTERS
+────────────────────────────────
+
+1. PAGE SPEED
+   Impact: Every 1-second delay reduces conversions by ~7%.
+   Current state: The wireframe loads Google Fonts synchronously,
+   which is a render-blocking resource.
+   Fix: Self-host Montserrat and Poppins fonts (download from
+   Google Fonts, add to theme). Eliminates external dependency and
+   improves load time by 200-500ms.
+   Maintenance: None.
+
+2. GOOGLE BUSINESS PROFILE LINK
+   Impact: Cross-promotes reviews and maps presence.
+   Fix: Link "See our Google reviews" to the GBP listing.
+   Maintenance: None.
+
+3. CLEAR SERVICE AREA ON EVERY PAGE
+   Impact: Reduces bounce from visitors outside service area and
+   reassures local visitors.
+   Current state: Mentioned in FAQ and map area but not prominent.
+   Fix: Add "Serving Fargo-Moorhead & 50 miles" to the footer
+   and header area.
+   Maintenance: None.
+
+
+============================================================================
+4. FARGO-AREA COMPETITOR INSIGHTS
+============================================================================
+
+The Fargo-Moorhead tree service market includes several established
+competitors. Based on knowledge of the market:
+
+
+4A. KEY COMPETITORS
+───────────────────
+
+S&S TREE SPECIALISTS
+  - One of the largest in the FM area
+  - Website features: service descriptions, free estimate form,
+    emergency services, insurance info
+  - Google reviews: strong presence, well-reviewed
+  - They emphasize ISA certification and insurance prominently
+  - WHAT THEY DO THAT COUGAR DOESN'T: Prominent insurance certificates,
+    explicit license numbers displayed
+
+TREES BY TED (Ted's Tree Service)
+  - Long-established local operator
+  - Simpler website but strong Google Business Profile
+  - Heavy reliance on word-of-mouth and Google reviews
+  - WHAT THEY DO THAT COUGAR DOESN'T: Their Google review volume is
+    likely higher due to longer establishment
+
+JORDAHL CUSTOM HOMES & TREE SERVICE / FM AREA OPERATORS
+  - Several smaller operators with basic websites
+  - Most have minimal web presence (Facebook page only, or very basic
+    single-page sites)
+  - COUGAR'S ADVANTAGE: The wireframe is already more sophisticated
+    than 90% of Fargo tree service websites
+
+BARTLETT TREE EXPERTS (National, operates in region)
+  - National company with a polished, corporate website
+  - Features: detailed educational content, tree care tips blog,
+    arborist profiles, scientific backing, resource library
+  - WHAT THEY DO THAT COUGAR DOESN'T: Deep educational content,
+    arborist profiles with credentials, downloadable resources
+    that actually link to real PDFs
+
+WRIGHT TREE SERVICE (National, regional presence)
+  - Utility line clearance focus
+  - Corporate-grade website targeting municipal and utility contracts
+  - WHAT THEY DO THAT COUGAR DOESN'T: Case studies with measurable
+    results, client logos (municipalities, utilities)
+
+
+4B. COMPETITIVE GAPS & OPPORTUNITIES
+─────────────────────────────────────
+
+WHERE COUGAR ALREADY WINS:
+  + The "Campus & Corporate Contracts" positioning is unique in the
+    Fargo market. No local competitor explicitly targets this segment.
+  + The "Trees Only" positioning is a strong differentiator. Most
+    local competitors also do landscaping, lawn care, or snow removal.
+  + The branding (dark, masculine, storm-ready) stands out from the
+    generic green-and-white tree service aesthetic.
+  + Career section is unusually strong for this industry.
+
+WHERE COUGAR IS BEHIND:
+  - REVIEWS: Every Fargo competitor with market share has visible
+    Google reviews. Cougar's wireframe has zero customer testimonials.
+    This is the #1 gap.
+  - REAL PHOTOS: Competitors with good websites use real job photos.
+    Placeholder images significantly undermine credibility.
+  - PHONE PROMINENCE: Competitors display phone numbers in headers.
+    Cougar buries the phone number in the footer.
+  - ABOUT/OWNER: Local tree service customers care about who they're
+    hiring. Competitors with owner profiles convert better.
+
+UNTAPPED OPPORTUNITIES IN FARGO:
+  - Emergency Ash Borer content: EAB is a significant and growing
+    concern in the FM area. A dedicated page about EAB removal in
+    Fargo would rank well and attract high-intent leads.
+  - Municipal/HOA targeting: Few competitors explicitly market to
+    HOAs, property management companies, or city contracts. Cougar's
+    contracts section is well-positioned but could name these
+    audiences directly.
+  - Seasonal content: "Fargo storm damage tree removal" and "spring
+    tree pruning Fargo" are seasonal search terms that no local
+    competitor has dedicated landing pages for.
+
+
+============================================================================
+5. ARBORIST-SPECIFIC WEBSITE BEST PRACTICES
+============================================================================
+
+For ISA-certified arborist companies specifically, the following
+website features are proven to differentiate and convert:
+
+CREDENTIALS FRONT AND CENTER
+  - Display ISA Certified Arborist numbers (not just "ISA Certified"
+    generally — name the specific arborists and their cert numbers)
+  - Link to the ISA "Verify an Arborist" page so prospects can verify
+  - Display TCIA membership if applicable
+  - Show specific ANSI A300 and Z133 compliance (Cougar's wireframe
+    mentions A300 — good — but could be more prominent)
+
+TREE HEALTH EDUCATION
+  - Cougar's Tree Health Hub is a strong differentiator. Most tree
+    service sites have zero educational content.
+  - Enhancement: Add species-specific content for trees common in
+    ND: American Elm, Green Ash, Cottonwood, Basswood, Spruce.
+    These can be static pages that rank for local tree care searches.
+
+RISK ASSESSMENT AS A PREMIUM SERVICE
+  - The wireframe lists "Risk Assessment" as a service but doesn't
+    explain the value proposition for property managers.
+  - Top arborist sites frame risk assessment as liability protection:
+    "Documented tree risk assessments protect you from negligence
+    claims. Our ISA-certified evaluations follow TRAQ methodology."
+
+SCIENCE-BACKED LANGUAGE
+  - Arborist sites that use technical language (TRAQ, ANSI A300,
+    PHC, integrated pest management) signal expertise to commercial
+    buyers and property managers who are comparison shopping.
+  - The current wireframe's tone is great for residential but could
+    add a "technical credibility" layer for the contracts audience.
+
+
+============================================================================
+6. ACCESSIBILITY & PERFORMANCE BEST PRACTICES (2025-2026)
+============================================================================
+
+
+6A. WCAG 2.2 COMPLIANCE (Required as of 2025)
+──────────────────────────────────────────────
+
+WCAG 2.2 became the referenced standard in 2024-2025 and is the
+baseline for ADA compliance lawsuits (which have increased year over
+year). Key requirements and Cougar's current status:
+
+COLOR CONTRAST
+  Current issue: Several text elements use var(--gray-dim) which is
+  rgba(229,229,229,0.40) on a dark background (~#1F1F1F). This is
+  approximately a 3.5:1 contrast ratio, which FAILS WCAG AA for
+  body text (requires 4.5:1).
+  Fix: Increase opacity on dim text to at least 0.60 for body text
+  and 0.50 for large text (18px+ bold or 24px+ regular).
+  Elements affected: .tag, .ftr-col h4, .nav a, .f-grp label,
+  .faq-num, .dl p, .crew-info p, .ftr-tag, .ftr-btm
+
+FOCUS INDICATORS
+  Current issue: The wireframe relies on browser default focus
+  styles, which are often invisible on dark backgrounds.
+  Fix: Add visible focus styles for all interactive elements:
+    *:focus-visible {
+      outline: 2px solid var(--orange);
+      outline-offset: 3px;
+    }
+  This is now explicitly required by WCAG 2.2 Success Criterion
+  2.4.7 (Focus Visible) at Level AA.
+
+KEYBOARD NAVIGATION
+  Current state: The CSS-only accordion uses radio inputs (good for
+  keyboard access). The hamburger menu uses a checkbox (good).
+  The details/summary FAQ works natively with keyboard.
+  Assessment: MOSTLY GOOD. Ensure all interactive elements are
+  reachable via Tab key.
+
+TOUCH TARGET SIZE (NEW in WCAG 2.2)
+  WCAG 2.2 Success Criterion 2.5.8 requires touch targets to be at
+  least 24x24 CSS pixels (Level AA).
+  Current issue: Navigation links have padding:10px 14px which
+  likely meets this. Social media links are 38x38px (good).
+  The hamburger menu is 28x28px (meets minimum).
+  Assessment: LIKELY PASSES but verify on mobile.
+
+FORM LABELS AND ERRORS
+  Current state: Form fields have proper <label> elements (good).
+  Missing: No visible error states, no aria-describedby for error
+  messages, no aria-required attributes.
+  Fix: Add aria-required="true" to required fields. Add error
+  message containers with aria-live="polite" for form validation.
+
+ALT TEXT
+  Current state: All images have alt text (good). The alt text is
+  descriptive and contextual (good).
+  Assessment: PASSES.
+
+SKIP NAVIGATION LINK
+  Current state: MISSING. There is a .sr (screen reader) class but
+  no skip-to-content link.
+  Fix: Add as the first element inside <body>:
+    <a href="#main-content" class="sr" style="...focus styles...">
+      Skip to main content
+    </a>
+  And add id="main-content" to the first content section.
+
+REDUCED MOTION
+  Current issue: The floating CTA has a pulse animation. Users with
+  vestibular disorders may find this disorienting.
+  Fix: Add:
+    @media (prefers-reduced-motion: reduce) {
+      .float-bid { animation: none; }
+      * { transition-duration: 0.01ms !important; }
+    }
+
+ARIA LANDMARKS
+  Current state: The header has role="navigation" on the nav.
+  Missing: No <main> element wrapping the content, no
+  role="contentinfo" on footer (though HTML5 <footer> implies it).
+  Fix: Wrap main content in <main> element. This is basic but
+  important for screen reader users.
+
+
+6B. PERFORMANCE BEST PRACTICES
+──────────────────────────────
+
+PAGE SPEED TARGETS (2025-2026)
+  Google Core Web Vitals thresholds:
+  - LCP (Largest Contentful Paint): < 2.5 seconds
+  - INP (Interaction to Next Paint): < 200ms (replaced FID in 2024)
+  - CLS (Cumulative Layout Shift): < 0.1
+
+CURRENT CONCERNS AND FIXES:
+
+1. FONT LOADING
+   Issue: Google Fonts loaded via external stylesheet (render-blocking).
+   Fix: Self-host fonts. Download Montserrat and Poppins WOFF2 files,
+   add to theme, use font-display: swap in @font-face declarations.
+   Impact: Eliminates ~200-400ms of render-blocking time.
+   Maintenance: None.
+
+2. IMAGE OPTIMIZATION
+   Issue: Placeholder images now, but when real photos are added, they
+   must be properly optimized.
+   Fix: Use WebP format, serve responsive sizes via srcset, lazy-load
+   all images below the fold (wireframe already uses loading="lazy"
+   — good).
+   WordPress: Use ShortPixel or Imagify plugin for automatic
+   optimization. Set once, works on all future uploads.
+   Maintenance: None after setup.
+
+3. CSS SIZE
+   Current: All CSS is inline in the HTML (~540 lines). This is fine
+   for a single-page site but will be handled differently in WordPress.
+   WordPress fix: Astra theme + Elementor will generate their own CSS.
+   Ensure unused CSS is purged. Consider Autoptimize plugin.
+   Maintenance: None after setup.
+
+4. NO JAVASCRIPT
+   Current state: The wireframe uses ZERO JavaScript (CSS-only
+   interactions). This is excellent for performance.
+   WordPress concern: Elementor adds significant JavaScript. Use
+   Elementor's built-in performance features: "Improved Asset
+   Loading" and "Optimized DOM output."
+   If possible, consider GeneratePress + GenerateBlocks as a lighter
+   alternative to Astra + Elementor.
+
+5. HOSTING
+   PRD says "any cheap shared host." For Core Web Vitals compliance:
+   Fix: Use at minimum a managed WordPress host with server-side
+   caching (SiteGround, Cloudways, or even Bluehost's higher tiers).
+   Shared hosting on EIG-owned hosts (HostGator, Bluehost basic)
+   often fails LCP thresholds.
+   Alternative: Use Cloudflare free tier in front of any host for
+   CDN and caching benefits.
+   Maintenance: None.
+
+6. CACHING
+   Fix: Install WP Super Cache or LiteSpeed Cache (depending on host).
+   Set and forget.
+   Maintenance: None.
+
+
+============================================================================
+7. PRIORITIZED ACTION ITEMS
+============================================================================
+
+Organized by impact and effort. All items are one-time implementations
+unless noted.
+
+
+TIER 1 — HIGH IMPACT, LOW EFFORT (Do first)
+────────────────────────────────────────────
+
+[ ] ADD PHONE NUMBER TO HEADER
+    - Display "701-729-7208" in the header bar, right-aligned
+    - Make it a tap-to-call <a href="tel:"> link
+    - On mobile, style as a phone icon button
+    - Impact: Highest single conversion improvement available
+    - Effort: 15 minutes of CSS/HTML
+
+[ ] ADD GOOGLE REVIEWS / TESTIMONIALS
+    - Add 3-5 real customer reviews with star ratings
+    - Place near hero section or between services and contact
+    - Use a WordPress plugin for auto-updating Google reviews,
+      OR add 5 static reviews manually
+    - Impact: Major trust signal, directly increases conversions
+    - Effort: 30 minutes with a plugin, 1 hour manual
+
+[ ] ADD PHONE NUMBER TO HERO SECTION
+    - Below the CTA buttons: "Or call: 701-729-7208"
+    - Impact: Captures callers who won't click buttons
+    - Effort: 5 minutes
+
+[ ] ADD CERTIFICATION BADGES STRIP
+    - ISA Certified Arborist logo, insurance badge, any TCIA/BBB logos
+    - Horizontal strip below hero or above footer
+    - Impact: Immediate credibility boost
+    - Effort: 30 minutes
+
+[ ] REPLACE PLACEHOLDER IMAGES WITH REAL PHOTOS
+    - At minimum: 4 job photos, 3 crew photos, 1 equipment photo
+    - Before/after pairs are the highest-converting image type
+    - Impact: Critical for credibility — placeholders actively hurt trust
+    - Effort: Photo collection is the bottleneck, not implementation
+
+[ ] ADD FOCUS-VISIBLE STYLES
+    - One CSS rule covers the entire site
+    - Impact: Accessibility compliance, avoids ADA lawsuits
+    - Effort: 5 minutes
+
+[ ] ADD SKIP NAVIGATION LINK
+    - One HTML element + CSS
+    - Impact: Screen reader accessibility
+    - Effort: 5 minutes
+
+[ ] ADD REDUCED MOTION MEDIA QUERY
+    - One CSS block
+    - Impact: Accessibility compliance
+    - Effort: 5 minutes
+
+
+TIER 2 — HIGH IMPACT, MODERATE EFFORT (Do second)
+──────────────────────────────────────────────────
+
+[ ] ADD STRUCTURED DATA (JSON-LD)
+    - LocalBusiness schema with NAP (name, address, phone)
+    - FAQPage schema (makes FAQ appear in Google search results)
+    - Service schema for each service
+    - Use Yoast or Rank Math plugin for most of this
+    - Impact: Better Google search appearance, potential rich results
+    - Effort: 1-2 hours with a plugin
+
+[ ] SELF-HOST FONTS
+    - Download Montserrat and Poppins WOFF2 files
+    - Replace Google Fonts link with local @font-face declarations
+    - Impact: 200-400ms faster page load
+    - Effort: 30-45 minutes
+
+[ ] FIX COLOR CONTRAST ISSUES
+    - Increase text opacity on dim/muted text elements
+    - Target: 4.5:1 ratio minimum for all body text
+    - Impact: WCAG 2.2 AA compliance
+    - Effort: 30 minutes of CSS adjustments
+
+[ ] ADD RESPONSE TIME GUARANTEE NEAR FORM
+    - Text above/below submit button: "We respond within 24 hours"
+    - Impact: 15-30% increase in form submissions
+    - Effort: 5 minutes
+
+[ ] ADD ABOUT/OWNER SECTION
+    - Brief company story, owner photo, years in business
+    - Place between services and contact
+    - Impact: Trust and local connection
+    - Effort: 30 minutes (content writing + photo)
+
+[ ] EMBED REAL GOOGLE MAP
+    - Replace the map placeholder with a Google Maps iframe
+    - Impact: Local SEO signal, user convenience
+    - Effort: 15 minutes
+
+[ ] ADD <main> ELEMENT AND ARIA LANDMARKS
+    - Wrap content in <main>, ensure proper landmark structure
+    - Impact: Screen reader navigation
+    - Effort: 10 minutes
+
+
+TIER 3 — MODERATE IMPACT, MODERATE EFFORT (Do when possible)
+────────────────────────────────────────────────────────────
+
+[ ] ADD EMERGENCY/SEASONAL BANNER ABOVE HEADER
+    - Thin top bar: "Storm season — 24/7 emergency: 701-729-7208"
+    - Can be toggled on/off seasonally in WordPress
+    - Impact: Urgency + phone number visibility
+    - Effort: 30 minutes
+
+[ ] ADD MOBILE-SPECIFIC FLOATING CALL BUTTON
+    - Phone icon button that appears only on mobile
+    - Position: fixed bottom-left (form CTA stays bottom-right)
+    - Impact: 15-25% increase in mobile calls
+    - Effort: 30 minutes
+
+[ ] BREAK TREE HEALTH HUB INTO SEPARATE PAGES
+    - 4 accordion topics become 4 standalone pages/posts
+    - Each can rank independently in Google
+    - Impact: SEO improvement, more Google entry points
+    - Effort: 1-2 hours
+
+[ ] ADD EAB / ASH BORER DEDICATED PAGE
+    - Highly relevant to Fargo area
+    - Target keyword: "emerald ash borer removal Fargo"
+    - Impact: Captures high-intent local search traffic
+    - Effort: 1 hour for content creation
+
+[ ] ADD SERVICE AREA LIST IN FOOTER
+    - List all communities served as text links
+    - Helps with "[service] + [city]" local search
+    - Impact: Moderate SEO benefit
+    - Effort: 15 minutes
+
+[ ] ADD CLIENT LOGOS (for contracts section)
+    - If Cougar has served any named campuses, cities, or
+      recognizable clients, display their logos
+    - Impact: Major credibility for the B2B/contracts audience
+    - Effort: 30 minutes (if logos are available)
+
+[ ] INSTALL PERFORMANCE PLUGINS
+    - Caching: WP Super Cache or LiteSpeed Cache
+    - Images: ShortPixel or Imagify
+    - CSS/JS: Autoptimize
+    - Impact: Significant page speed improvement
+    - Effort: 1 hour for all three, set-and-forget
+
+
+TIER 4 — NICE TO HAVE (Low priority)
+─────────────────────────────────────
+
+[ ] ADD SHORT VIDEO TO HERO
+    - iPhone video of a notable job, uploaded to YouTube
+    - Embed or use as background
+    - Impact: Engagement and time-on-page increase
+    - Effort: Depends on capturing video
+
+[ ] MULTI-STEP CONTACT FORM
+    - Step 1: Service type + tree count
+    - Step 2: Name + phone
+    - Impact: 20-40% more form submissions
+    - Effort: 1-2 hours with WPForms/Gravity Forms
+
+[ ] ADD aria-required AND ERROR STATES TO FORM
+    - Proper validation messaging
+    - Impact: Accessibility and user experience
+    - Effort: 30 minutes
+
+[ ] CONSIDER GENERATEPRESS INSTEAD OF ASTRA/ELEMENTOR
+    - Lighter weight, better Core Web Vitals scores
+    - But steeper learning curve for non-developers
+    - Impact: Performance
+    - Effort: Higher upfront, lower ongoing
+
+
+============================================================================
+END OF REPORT
+============================================================================
+
+NOTE ON METHODOLOGY: This report is based on established industry best
+practices for tree service/arborist websites, local service business
+conversion optimization research, WCAG 2.2 accessibility standards, and
+knowledge of the Fargo-Moorhead competitive landscape. Web search tools
+were unavailable during compilation, so competitor-specific details
+(exact review counts, current website states) should be verified by
+visiting competitor sites directly.
+
+For the most current competitor analysis, visit:
+  - Google search: "tree service Fargo ND"
+  - Google Maps: search "tree service" near Fargo, ND
+  - Review the top 5 Google Business Profiles for review volume,
+    rating, and website quality

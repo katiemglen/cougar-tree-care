@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>404 — Lost in the Forest | Cougar Tree Care</title>
+<meta name="description" content="Page not found. Let's get you back on the trail.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Poppins',sans-serif;
+  background:#1a1a1a;color:#E5E5E5;
+  min-height:100vh;overflow:hidden;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  position:relative;
+}
+h1,h2,h3{font-family:'Montserrat',sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:2px}
+
+/* Dark forest background */
+.forest{
+  position:absolute;bottom:0;left:0;right:0;height:100%;
+  display:flex;align-items:flex-end;justify-content:center;
+  pointer-events:none;overflow:hidden;
+}
+/* CSS pine tree silhouettes */
+.tree-sil{
+  position:absolute;bottom:0;
+  width:0;height:0;border-style:solid;
+  opacity:0.08;
+}
+.tree-sil:nth-child(1){left:5%;border-width:0 40px 180px 40px;border-color:transparent transparent #4CAF50 transparent}
+.tree-sil:nth-child(2){left:15%;border-width:0 30px 140px 30px;border-color:transparent transparent #388E3C transparent}
+.tree-sil:nth-child(3){left:25%;border-width:0 50px 220px 50px;border-color:transparent transparent #2E7D32 transparent}
+.tree-sil:nth-child(4){left:40%;border-width:0 35px 160px 35px;border-color:transparent transparent #43A047 transparent}
+.tree-sil:nth-child(5){left:55%;border-width:0 45px 200px 45px;border-color:transparent transparent #388E3C transparent}
+.tree-sil:nth-child(6){left:68%;border-width:0 28px 130px 28px;border-color:transparent transparent #4CAF50 transparent}
+.tree-sil:nth-child(7){left:78%;border-width:0 55px 240px 55px;border-color:transparent transparent #2E7D32 transparent}
+.tree-sil:nth-child(8){left:90%;border-width:0 32px 150px 32px;border-color:transparent transparent #43A047 transparent}
+
+/* Floating firefly dots */
+.firefly{
+  position:absolute;
+  width:4px;height:4px;border-radius:50%;
+  background:#FF851B;
+  animation:fly 6s ease-in-out infinite;
+  opacity:0;
+}
+@keyframes fly{
+  0%{opacity:0;transform:translate(0,0)}
+  20%{opacity:0.8}
+  50%{opacity:1;transform:translate(20px,-30px)}
+  80%{opacity:0.5}
+  100%{opacity:0;transform:translate(-10px,-60px)}
+}
+.firefly:nth-child(1){left:20%;bottom:30%;animation-delay:0s}
+.firefly:nth-child(2){left:40%;bottom:40%;animation-delay:1.2s}
+.firefly:nth-child(3){left:60%;bottom:25%;animation-delay:2.4s}
+.firefly:nth-child(4){left:75%;bottom:45%;animation-delay:0.8s}
+.firefly:nth-child(5){left:35%;bottom:55%;animation-delay:3s}
+.firefly:nth-child(6){left:85%;bottom:35%;animation-delay:1.6s}
+.firefly:nth-child(7){left:10%;bottom:50%;animation-delay:4s}
+.firefly:nth-child(8){left:50%;bottom:60%;animation-delay:2s}
+
+/* Content */
+.content-404{
+  position:relative;z-index:10;
+  text-align:center;padding:32px;
+  max-width:600px;
+}
+.big-404{
+  font-family:'Montserrat',sans-serif;font-weight:900;
+  font-size:clamp(6rem,20vw,12rem);
+  letter-spacing:8px;
+  color:transparent;
+  -webkit-text-stroke:3px #FF851B;
+  line-height:1;
+  margin-bottom:8px;
+  opacity:0.3;
+}
+.content-404 h1{
+  font-size:clamp(1.2rem,3vw,1.6rem);
+  letter-spacing:4px;
+  margin-bottom:16px;
+  color:#FF851B;
+}
+.content-404 p{
+  font-size:1rem;color:rgba(229,229,229,0.7);
+  margin-bottom:24px;line-height:1.7;
+}
+.btn-home{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-family:'Poppins',sans-serif;font-weight:600;font-size:0.92rem;
+  padding:14px 32px;border:none;cursor:pointer;
+  text-decoration:none;text-transform:uppercase;letter-spacing:1px;
+  border-radius:50px;
+  background:#FF851B;color:#fff;
+  box-shadow:0 4px 20px rgba(255,133,27,0.35);
+  transition:all 0.3s;
+}
+.btn-home:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 32px rgba(255,133,27,0.6);
+  filter:brightness(1.12);
+}
+.btn-outline{
+  background:transparent;color:#E5E5E5;
+  border:2px solid #FF851B;box-shadow:none;
+}
+.btn-outline:hover{
+  background:#FF851B;color:#fff;
+  box-shadow:0 4px 20px rgba(255,133,27,0.35);
+}
+.btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:32px}
+
+/* Bob Ross image section */
+.bob-ross-section{
+  margin-top:32px;
+  padding:20px;
+  border-radius:16px;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+}
+.bob-ross-section img{
+  width:100%;max-width:520px;height:auto;
+  border-radius:12px;
+  display:block;margin:0 auto;
+  object-fit:contain;
+}
+.bob-ross-section p{
+  font-size:0.82rem;font-style:italic;
+  color:rgba(229,229,229,0.5);
+  margin-top:12px;margin-bottom:0;
+}
+/* Chainsaw emoji drift */
+.chainsaw-drift{
+  position:absolute;
+  font-size:2rem;
+  animation:drift 15s linear infinite;
+  opacity:0.06;
+  pointer-events:none;
+}
+@keyframes drift{
+  0%{transform:translateX(-100vw) rotate(0deg)}
+  100%{transform:translateX(100vw) rotate(360deg)}
+}
+.chainsaw-drift:nth-child(1){top:15%;animation-delay:0s}
+.chainsaw-drift:nth-child(2){top:35%;animation-delay:5s}
+.chainsaw-drift:nth-child(3){top:65%;animation-delay:10s}
+</style>
+</head>
+<body>
+
+<!-- Forest silhouette background -->
+<div class="forest" aria-hidden="true">
+  <div class="tree-sil"></div>
+  <div class="tree-sil"></div>
+  <div class="tree-sil"></div>
+  <div class="tree-sil"></div>
+  <div class="tree-sil"></div>
+  <div class="tree-sil"></div>
+  <div class="tree-sil"></div>
+  <div class="tree-sil"></div>
+</div>
+
+<!-- Fireflies -->
+<div class="firefly" aria-hidden="true"></div>
+<div class="firefly" aria-hidden="true"></div>
+<div class="firefly" aria-hidden="true"></div>
+<div class="firefly" aria-hidden="true"></div>
+<div class="firefly" aria-hidden="true"></div>
+<div class="firefly" aria-hidden="true"></div>
+<div class="firefly" aria-hidden="true"></div>
+<div class="firefly" aria-hidden="true"></div>
+
+<!-- Drifting chainsaws -->
+<span class="chainsaw-drift" aria-hidden="true">&#129683;</span>
+<span class="chainsaw-drift" aria-hidden="true">&#129683;</span>
+<span class="chainsaw-drift" aria-hidden="true">&#129683;</span>
+
+<!-- Main content -->
+<div class="content-404">
+  <div class="big-404" aria-hidden="true">404</div>
+  <h1>Lost in the Forest</h1>
+  <p>Looks like you wandered off the trail. This page doesn&rsquo;t exist &mdash; but we know a crew that can clear a path back.</p>
+
+  <div class="btn-row">
+    <a href="cougar-2026.html" class="btn-home">&#127968; Back to Home</a>
+    <a href="cougar-2026.html#contact" class="btn-home btn-outline">&#128222; Contact Us</a>
+  </div>
+
+  <!-- Bob Ross "Happy Little 404s" -->
+  <div class="bob-ross-section">
+    <img src=".images/2026-02-12-bob-ross-404.png" alt="Bob Ross painting a 404 Page Not Found canvas with happy little trees — There are no mistakes, just happy little 404s." loading="eager">
+    <p>&ldquo;There are no mistakes, just happy little 404s.&rdquo;</p>
+  </div>
+</div>
+
+</body>
+</html>

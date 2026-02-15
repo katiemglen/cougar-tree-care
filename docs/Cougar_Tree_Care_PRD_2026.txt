@@ -1,0 +1,95 @@
+# COUGAR TREE CARE — 2026 WEBSITE PRD
+**Version:** 1.0 FINAL (Careers Locked — All Else Editable)  
+**Compiled:** February 11, 2026  
+**Target:** Claude Code Playground → WordPress Build  
+**Owner:** James R. (phasing out) → David (successor)  
+
+---
+
+## 1. MISSION  
+Build a corporate-grade, tree-heavy site that sells big jobs—campuses, cities, hospitals—while nodding to homeowners. No fluff. No lawns. Just trees.  
+
+---
+
+## 2. BRANDING  
+- **Tone:** Raw. Masculine. Storm-ready.  
+- **Colors:**  
+  1. Navy Iron: #001F3F | #FF851B | #FFFFFF  
+  2. Charcoal Burn: #1a1a1a | #CC5500 | #E5E5E5  
+  3. Deep Root: #2C2C2C | #FF6B35 | #F8F8F8  
+- **Textures:** Bark rings, root veins, leaf scatter—low-opacity overlays. No gradients.  
+- **Fonts:** Montserrat Black (headlines), Poppins (body).  
+- **Logo:** Orange cougar silhouette + "Cougar Tree Care" in bold.  
+
+---
+
+## 3. SITE MAP  
+1. Home  
+2. Services  
+3. Campus & Corporate Contracts  
+4. Tree Health Hub  
+5. FAQ  
+6. Contact  
+7. Careers (LOCKED — FINAL VERSION BELOW)  
+
+---
+
+## 4. CAREERS SECTION — LOCKED  
+Headline: **Careers – Cougar Tree Care**  
+Intro: "We're looking for hard-working people who aren't afraid to climb high and work higher. No weekends. Competitive pay. We're hiring."  
+
+### Open Roles  
+- Ground Crew / Laborer  
+- Climber / Aerial Technician  
+- Crew Lead / Foreman  
+- CDL Driver / Equipment Operator  
+- Estimator / Sales (seasonal)  
+
+### What You Get  
+- Competitive pay — weekly direct deposit  
+- Year-round work (not seasonal)  
+- ISA certification training paid  
+- CDL training available  
+- Real career path: ground → climber → lead → foreman  
+- Gear and PPE provided  
+- Tight crew, no corporate nonsense  
+
+### Day in the Life  
+- **7:00 AM** — Roll call at the shop. Load trucks, review the day's jobs.  
+- **7:30 AM** — On-site. Safety brief. Gear up.  
+- **8:00 AM – 12:00 PM** — Climb, cut, rig, chip. Real work.  
+- **12:00 PM** — Lunch. Usually tailgate. Sometimes tacos.  
+- **12:30 – 5:00 PM** — Second job site or finish the first. Full cleanup.  
+- **5:30 PM** — Back at the shop. Clean gear, fuel trucks.  
+- **6:00 PM** — Home. Done.  
+
+### Meet the Crew  
+1. **Jake R.** – Crew Lead · 8 Years  
+   "ISA Certified. Started on the ground, climbed his way up. Literally."  
+2. **Marcus T.** – Climber · 4 Years  
+   "Former lineman. Says trees are more honest than utility poles."  
+3. **Sam K.** – Ground Crew · 1 Year  
+   "NDSU forestry student. Working his way toward ISA certification."  
+
+CTA: *No resume needed. Just show up ready to work.*  
+[Orange "Apply Now" → Contact]  
+
+---
+
+## 5. TECH & DEPLOYMENT  
+- **WordPress** (Astra + Elementor Free)  
+- **Form Backend:** Google Forms → email batch (Zapier)  
+- **Images:** Royalty-free, alt text SEO-ready  
+- **Hosting:** Any cheap shared host  
+- **Analytics:** None — owner doesn’t care  
+
+---
+
+## 6. LAUNCH  
+- Domain: cougar-treecare.com  
+- Build: Paste PRD into Claude → generate → Elementor blocks  
+- Go live: 1 hour  
+
+---  
+
+Careers is frozen. Everything else—edit away.  
