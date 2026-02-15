@@ -799,12 +799,12 @@ section{padding:100px 0;position:relative}
   .header-phone-text{display:inline!important;font-size:1.05rem}
   .header-phone-icon{display:none!important}
   /* Full-screen opaque mobile nav — 2025 trend */
-  .nav{position:fixed;inset:0;z-index:500;
+  .nav{position:fixed;top:0;left:0;right:0;bottom:0;width:100vw;height:100vh;height:100dvh;z-index:9999;
     background:var(--bg);
     flex-direction:column;padding:80px 40px 40px;gap:8px;
     transform:translateX(100%);opacity:0;
     transition:transform 0.35s cubic-bezier(0.22,1,0.36,1),opacity 0.25s ease;
-    justify-content:flex-start;align-items:stretch;
+    justify-content:center;align-items:stretch;
     overflow-y:auto}
   .nav-check:checked~.nav{transform:translateX(0);opacity:1}
   .nav-check:checked~.nav-burger span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
