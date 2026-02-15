@@ -266,7 +266,7 @@ section{padding:100px 0;position:relative}
 .scroll-progress{background:linear-gradient(90deg,var(--green-dark),var(--accent))}
 /* Green response guarantee icon */
 .response-guarantee-icon{color:var(--green-light)}
-.section-head p{color:var(--text-mid);font-size:1.02rem;max-width:580px;margin:0 auto;line-height:1.7}
+.section-head p{color:var(--text-mid);font-size:1.02rem;max-width:580px;margin:0 auto;line-height:1.7;padding:0 20px}
 
 /* ============================================================
    ORGANIC GLASS CARD
@@ -276,6 +276,7 @@ section{padding:100px 0;position:relative}
   backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
   border:1px solid var(--glass-border);
   transition:transform 0.3s ease,box-shadow 0.3s ease,border-color 0.3s ease;
+  padding-left:16px;padding-right:16px;
 }
 .glass:hover,.glass:focus-within{
   transform:translateY(-5px) scale(1.03);
@@ -787,12 +788,14 @@ section{padding:100px 0;position:relative}
 @media(max-width:768px){
   section{padding:72px 0}
   .nav-burger{display:flex}
-  /* Mobile header layout improvements */
-  .header-inner{flex-wrap:wrap;justify-content:center;position:relative}
-  .logo{order:1;flex:1 0 100%;justify-content:center;margin-bottom:8px}
+  /* Mobile header layout — two lines */
+  .header-inner{flex-wrap:wrap;justify-content:center;position:relative;padding:8px 24px}
+  .logo{order:1;flex:1 0 100%;justify-content:center;margin-bottom:4px}
   .isa-badge{display:none}
-  .header-phone{order:2;position:absolute;left:24px;top:50%;transform:translateY(-50%)}
-  .nav-burger{order:3;position:absolute;right:24px;top:50%;transform:translateY(-50%)}
+  .header-phone{order:2;margin:0 auto}
+  .header-phone-text{display:inline!important;font-size:0.75rem}
+  .header-phone-icon{display:none!important}
+  .nav-burger{order:3;position:absolute;right:16px;top:8px}
   .nav{position:fixed;top:0;left:0;right:0;bottom:0;
     background:rgba(var(--bg-rgb),0.97);
     backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
@@ -834,7 +837,7 @@ section{padding:100px 0;position:relative}
   .section-head p{padding:0 20px}
 }
 @media(max-width:480px){
-  .container{padding:0 16px}
+  .container{padding:0 20px}
   .clients-grid{grid-template-columns:1fr}
   .services-grid{grid-template-columns:1fr}
   .seasons{grid-template-columns:1fr}
